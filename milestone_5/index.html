@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="container">
+            <h1>Editable Resume Builder By Mehak Akram</h1>
+            
+            <form id="resume-form">
+
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" required>
+                </div>
+
+                    <div class="form-group">
+                        <label for="profilePicture">Profile Picture</label>
+                    <input type="file" id="profilePicture" name="profilePicture" accept="images/*" required>
+                    </div>
+  
+                
+                <div class="form-group">
+                    <label for="experience">Work Experience:</label>
+                    <textarea id="experience" required></textarea>
+                </div>
+    
+                <div class="form-group">
+                    <label for="education">Education:</label>
+                    <textarea id="education" required></textarea>
+                </div>
+    
+                <div class="form-group">
+                    <label for="skills">Skills:</label>
+                    <textarea id="skills" required></textarea>
+                </div>
+    
+                <button type="submit">Generate Resume</button>
+            </form>
+            <div id="resume-output" class="resume-output"></div>
+            <!-- Generated resume will appear here -->
+        </div>
+           
+        </div>
+      
+    
+        <script src="main.js"></script>
+</body>
+</html>
